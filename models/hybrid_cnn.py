@@ -3,7 +3,7 @@ import numpy as np
 
 class Hybrid_CNN( object ):
     """
-    Hybrid CNN model without using metadata information
+    Hybrid CNN model using metadata information
     """
     def __init__( self, seq_length, num_labels, pretrained_embeddings, vocab_size, dim, filter_sizes, num_filters, metadata, md_seq_len,  md_f_sizes, md_num_filters ):
         self.x_input = tf.placeholder( tf.int32, [None, seq_length], name="x_input" )
